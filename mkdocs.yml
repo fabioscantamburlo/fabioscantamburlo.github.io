@@ -1,0 +1,40 @@
+site_name: Leveling Up For What I Lack
+site_url: https://fabioscantamburlo.github.io
+site_description: Turning daily failures into brain EXP.
+site_author: Fabio Scantamburlo
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Night mode
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Day mode
+  font:
+    text: Press Start 2P
+    code: Share Tech Mono
+  features:
+    - navigation.top
+    - navigation.sections
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search
+  - blog:
+      blog_dir: blog
+      post_date_format: medium
+
+nav:
+  - Home: index.md
+  - Blog: blog/index.md
+  - About: about.md

@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&family=VT323&display=swap');
+
+/* ── Palette tokens ── */
+:root {
+  --crystal-cyan: #43C6B9;
+  --suicune-purple: #9255A4;
+  --pikachu-gold: #FFCB05;
+  --midnight: #1A2A3A;
+  --icy-shimmer: #F0F8F8;
+}
+
+/* ── Light scheme ── */
+[data-md-color-scheme="default"] {
+  --md-default-bg-color: var(--icy-shimmer);
+  --md-default-fg-color: var(--midnight);
+  --md-typeset-color: var(--midnight);
+  --md-typeset-a-color: var(--crystal-cyan);
+  --md-accent-fg-color: var(--suicune-purple);
+  --md-code-bg-color: #e4f4f4;
+  --md-code-fg-color: var(--midnight);
+  --theme-heading-color: var(--midnight);
+  --theme-nav-color: var(--midnight);
+}
+
+/* ── Dark scheme ── */
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #0d1b2a;
+  --md-default-fg-color: #c8e8e6;
+  --md-typeset-color: #c8e8e6;
+  --md-typeset-a-color: var(--crystal-cyan);
+  --md-accent-fg-color: var(--pikachu-gold);
+  --md-code-bg-color: #112233;
+  --md-code-fg-color: var(--crystal-cyan);
+  --theme-heading-color: var(--crystal-cyan);
+  --theme-nav-color: #c8e8e6;
+}
+
+/* ── Base ── */
+body {
+  image-rendering: pixelated;
+  background-color: var(--md-default-bg-color);
+}
+
+/* ── Header ── */
+.md-header {
+  background-color: var(--midnight) !important;
+  border-bottom: 3px solid var(--crystal-cyan);
+}
+
+.md-header__title {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.65rem;
+  color: var(--crystal-cyan) !important;
+  letter-spacing: 2px;
+}
+
+/* ── Nav ── */
+.md-nav__title,
+.md-nav__link {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.5rem;
+  color: var(--theme-nav-color) !important;
+  line-height: 2;
+}
+
+.md-nav__link:hover,
+.md-nav__link--active {
+  color: var(--suicune-purple) !important;
+  text-shadow: 0 0 6px #9255a455;
+}
+
+/* ── Headings ── */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  font-family: 'Press Start 2P', monospace;
+  color: var(--theme-heading-color);
+  border-bottom: 2px solid var(--crystal-cyan);
+  padding-bottom: 0.3em;
+}
+
+.md-typeset h1 { font-size: 1rem; }
+.md-typeset h2 { font-size: 0.8rem; }
+.md-typeset h3 { font-size: 0.65rem; }
+
+/* ── Body text ── */
+.md-typeset p,
+.md-typeset li {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.9rem;
+  color: var(--md-typeset-color);
+  line-height: 1.9;
+}
+
+.md-typeset strong {
+  color: var(--md-accent-fg-color);
+}
+
+/* ── Links ── */
+.md-typeset a {
+  color: var(--md-typeset-a-color) !important;
+  text-decoration: underline dotted;
+}
+
+.md-typeset a:hover {
+  color: var(--suicune-purple) !important;
+  text-shadow: 0 0 8px #9255a455;
+}
+
+/* ── Code ── */
+.md-typeset code,
+.md-typeset pre {
+  font-family: 'Share Tech Mono', monospace;
+  border: 1px solid var(--crystal-cyan);
+  border-radius: 0;
+}
+
+/* ── Content border ── */
+.md-content__inner {
+  border-left: 3px solid var(--crystal-cyan);
+  padding-left: 1.5rem;
+}
+
+/* ── Tags ── */
+.md-tag {
+  background-color: var(--suicune-purple) !important;
+  color: var(--icy-shimmer) !important;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.4rem;
+  border-radius: 0;
+}
+
+/* ── Footer ── */
+.md-footer,
+.md-footer-meta {
+  background-color: var(--midnight);
+  border-top: 3px solid var(--crystal-cyan);
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.45rem;
+}
+
+/* ── Trainer Card Flip ── */
+.tc-flip-wrapper {
+  perspective: 1000px;
+  max-width: 420px;
+  margin: 2rem auto;
+}
+
+.tc-flip-inner {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+
+.tc-flip-inner.flipped {
+  transform: rotateY(180deg);
+}
+
+.tc-front, .tc-back {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.tc-back {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  transform: rotateY(180deg);
+}
+
+/* ── Trainer Card ── */
+.crystal-trainer-card {
+  --bg-color: var(--md-default-bg-color);
+  --text-color: var(--midnight);
+  --primary-accent: var(--crystal-cyan);
+  --secondary-accent: var(--suicune-purple);
+  --gold-accent: var(--pikachu-gold);
+
+  font-family: 'VT323', 'Share Tech Mono', monospace;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  max-width: 420px;
+  margin: 0;
+  padding: 4px;
+  border: 4px solid var(--midnight);
+  box-shadow: inset 0 0 0 4px var(--bg-color), inset 0 0 0 6px var(--midnight), 4px 4px 0px 0px rgba(26,42,58,0.3);
+  border-radius: 8px;
+  user-select: none;
+}
+
+.tc-header {
+  background-color: var(--crystal-cyan);
+  color: var(--icy-shimmer);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px 8px;
+  margin: 8px;
+  border: 2px solid var(--midnight);
+  border-radius: 4px;
+}
+
+.tc-title {
+  margin: 0;
+  font-size: 24px;
+  letter-spacing: 2px;
+  font-family: 'VT323', monospace;
+  font-weight: normal;
+  border: none;
+  color: var(--icy-shimmer);
+}
+
+.tc-id { font-size: 20px; }
+
+.tc-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  gap: 16px;
+}
+
+.tc-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.tc-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
+  border-bottom: 2px dotted rgba(26,42,58,0.3);
+}
+
+.tc-label { font-weight: bold; }
+
+.tc-sprite-container {
+  width: 110px;
+  height: 160px;
+  flex-shrink: 0;
+  border: 2px solid var(--midnight);
+  background-color: #fff;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+  box-shadow: inset 2px 2px 0px rgba(0,0,0,0.1);
+}
+
+.tc-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 2px;
+  image-rendering: pixelated;
+}
+
+.tc-badges {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 24px;
+  margin: 8px;
+  background-color: rgba(26,42,58,0.05);
+  border: 2px solid var(--midnight);
+  border-radius: 4px;
+}
+
+.tc-badge-icon {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  border: 2px solid var(--midnight);
+  border-radius: 4px;
+  background-color: var(--icy-shimmer);
+  box-shadow: 2px 2px 0px rgba(26,42,58,0.3);
+  cursor: default;
+}
+
+.tc-badge-icon.locked {
+  filter: grayscale(1) opacity(0.35);
+}
+
+.tc-legend-row .tc-badge-icon {
+  flex-shrink: 0;
+}
+
+.tc-badge-icon {
+  position: relative;
+}
+
+.tc-badge-icon:hover::after {
+  content: attr(title);
+  position: absolute;
+  bottom: 130%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--midnight);
+  color: var(--icy-shimmer);
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.35rem;
+  white-space: nowrap;
+  padding: 4px 8px;
+  border: 1px solid var(--crystal-cyan);
+  z-index: 10;
+  pointer-events: none;
+}
+
+.tc-badge.zephyr  { background-color: var(--crystal-cyan); }
+.tc-badge.hive    { background-color: var(--suicune-purple); }
+.tc-badge.plain   { background-color: var(--pikachu-gold); }
+
+.tc-flip-btn {
+  display: block;
+  width: calc(100% - 16px);
+  margin: 0 8px 8px;
+  padding: 8px;
+  background: var(--midnight);
+  color: var(--crystal-cyan);
+  border: 2px solid var(--crystal-cyan);
+  border-radius: 4px;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.5rem;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.tc-flip-btn:hover {
+  background: var(--crystal-cyan);
+  color: var(--midnight);
+}
+
+.tc-badge-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px 24px;
+}
+
+.tc-legend-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: 'VT323', monospace;
+  font-size: 20px;
+  color: var(--text-color);
+}
+
+.tc-legend-row .tc-badge {
+  flex-shrink: 0;
+}
+
+/* Badge earned — remove 'locked' class to unlock */
+
+[data-md-color-scheme="slate"] .crystal-trainer-card {
+  --text-color: var(--icy-shimmer);
+  background-color: #0d1b2a;
+}
+
+[data-md-color-scheme="slate"] .tc-row {
+  border-bottom-color: rgba(240,248,248,0.2);
+}
+
+[data-md-color-scheme="slate"] .tc-badges {
+  background-color: rgba(240,248,248,0.05);
+}
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--md-default-bg-color); }
+::-webkit-scrollbar-thumb { background: var(--crystal-cyan); border: 1px solid var(--midnight); }
