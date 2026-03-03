@@ -4,9 +4,9 @@ categories:
   - Meta
 ---
 
-# Welcome to Fabio's Pixel Log
+# Welcome to Fabio's Blog!
 
-First post! This blog is where I'll be writing about personal projects, tech experiments, and tutorials on things I find interesting.
+Hello! 
 
 <!-- more -->
 
