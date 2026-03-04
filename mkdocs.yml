@@ -1,4 +1,4 @@
-site_name: Leveling Up For What I Lack
+site_name: Levelling Up
 site_url: https://fabioscantamburlo.github.io
 site_description: Turning daily failures into brain EXP.
 site_author: Fabio Scantamburlo
@@ -6,6 +6,8 @@ site_author: Fabio Scantamburlo
 theme:
   name: material
   custom_dir: docs/overrides
+  icon:
+    logo: material/mouse
   palette:
     - scheme: default
       primary: custom
@@ -24,8 +26,6 @@ theme:
     code: Share Tech Mono
   features:
     - navigation.top
-    - navigation.sections
-    - navigation.indexes
     - toc.follow
 
 extra_css:
@@ -35,12 +35,16 @@ extra_javascript:
   - js/badges.js
   - js/badge-config.js
 
+hooks:
+  - hooks/latest_post.py
+
 plugins:
   - search
   - blog:
       blog_dir: blog
       post_date_format: medium
       post_readtime: true
+      post_excerpt: required
       categories_allowed:
         - Tech Deep Dive
         - Tutorials
@@ -49,7 +53,7 @@ plugins:
 nav:
   - Home: index.md
   - Blog: blog/index.md
-  - 🕹 Who's Behind The Screen: about.md
+  - 🕹 Player Stats: about.md
   - 🗂 Categories:
     - Tech Deep Dive: categories/tech-deep-dive.md
     - Tutorials: categories/tutorials.md

@@ -1,5 +1,5 @@
 <div class="hero">
-  <div class="hero-title">>> LEVELING UP<br>FOR WHAT I LACK</div>
+  <div class="hero-title">>> LEVELLING UP</div>
   <div class="hero-sub">Turning daily failures into brain EXP.</div>
   <div class="hero-blink">▼ PRESS START ▼</div>
   <a href="blog/" class="hero-btn">▶ START READING</a>

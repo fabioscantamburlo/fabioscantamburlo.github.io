@@ -1,7 +1,7 @@
 .PHONY: serve build stop
 
 serve:
-	uv run mkdocs serve --dirtyreload
+	uv run mkdocs serve
 
 build:
 	uv run mkdocs build

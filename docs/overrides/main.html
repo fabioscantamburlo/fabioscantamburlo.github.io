@@ -3,4 +3,13 @@
 {% block content %}
   {% include "partials/badges-sprite.html" ignore missing %}
   {{ super() }}
+  {% if page and page.url in ['.', '', 'index.html'] and config.extra.latest_post %}
+  <div class="latest-post-bar">
+    <span class="latest-post-label">▶ LATEST POST</span>
+    <a href="{{ config.extra.latest_post.url | url }}" class="latest-post-link">
+      {{ config.extra.latest_post.title }}
+    </a>
+  </div>
+  {% endif %}
 {% endblock %}
+

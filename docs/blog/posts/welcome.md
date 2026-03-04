@@ -1,13 +1,16 @@
 ---
-date: 2025-01-01
+date: 2026-03-04
 categories:
   - General Speaking
 ---
 
-# Welcome to Fabio's Blog!
+# Welcome to Levelling up!
 
-Hello! 
-
+Hello!
+Welcome to my blog! This is my first post so it's going to be just a simple announcement.
 <!-- more -->
 
-Stay tuned for more posts. The adventure begins here.
+I always wanted to start sharing something cool online and I think this is the right year. At the end of 2025, I planned some goals in order to **level up** my knowledge.
+One goal was indeed starting a tech blog and in 2026, here we are! Something cool is coming in the next weeks with a very interesting project I spent a few months on.
+
+Stay tuned, the adventure begins here.
