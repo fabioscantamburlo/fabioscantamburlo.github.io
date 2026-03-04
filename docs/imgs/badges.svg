@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <!-- Spark: 5-point star -->
+  <symbol id="badge-1" viewBox="0 0 24 24">
+    <polygon fill-rule="nonzero" points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+  </symbol>
+  <!-- Quill: hexagon -->
+  <symbol id="badge-2" viewBox="0 0 24 24">
+    <polygon points="12,2 22,8 22,16 12,22 2,16 2,8"/>
+  </symbol>
+  <!-- Tide: 7-sided polygon -->
+  <symbol id="badge-3" viewBox="0 0 24 24">
+    <polygon points="12,1 20,6 23,15 17,22 7,22 1,15 4,6"/>
+  </symbol>
+  <!-- Forge: square with inner square -->
+  <symbol id="badge-4" viewBox="0 0 24 24">
+    <rect x="3" y="3" width="18" height="18" rx="2"/>
+    <rect x="7" y="7" width="10" height="10" rx="1"/>
+  </symbol>
+  <!-- Streak: 5-point star (nonzero) -->
+  <symbol id="badge-5" viewBox="0 0 24 24">
+    <polygon fill-rule="nonzero" points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+  </symbol>
+  <!-- Lore: hexagon with inner hexagon -->
+  <symbol id="badge-6" viewBox="0 0 24 24">
+    <polygon points="12,2 20,8 20,16 12,22 4,16 4,8"/>
+    <polygon points="12,6 17,9.5 17,14.5 12,18 7,14.5 7,9.5"/>
+  </symbol>
+  <!-- Signal: pentagon with circle -->
+  <symbol id="badge-7" viewBox="0 0 24 24">
+    <polygon points="12,2 22,7 22,17 12,22 2,17 2,7"/>
+    <circle cx="12" cy="12" r="3"/>
+  </symbol>
+  <!-- Legend: 8-point star with circle -->
+  <symbol id="badge-8" viewBox="0 0 24 24">
+    <polygon fill-rule="nonzero" points="12,1 14.5,7 21,7 16,11.5 18,18 12,14.5 6,18 8,11.5 3,7 9.5,7"/>
+    <circle cx="12" cy="10" r="2"/>
+  </symbol>
+</svg>

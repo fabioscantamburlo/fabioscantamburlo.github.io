@@ -5,6 +5,7 @@ site_author: Fabio Scantamburlo
 
 theme:
   name: material
+  custom_dir: docs/overrides
   palette:
     - scheme: default
       primary: custom
@@ -24,17 +25,32 @@ theme:
   features:
     - navigation.top
     - navigation.sections
+    - navigation.indexes
+    - toc.follow
 
 extra_css:
   - stylesheets/extra.css
+
+extra_javascript:
+  - js/badges.js
+  - js/badge-config.js
 
 plugins:
   - search
   - blog:
       blog_dir: blog
       post_date_format: medium
+      post_readtime: true
+      categories_allowed:
+        - Tech Deep Dive
+        - Tutorials
+        - General Speaking
 
 nav:
   - Home: index.md
   - Blog: blog/index.md
-  - About: about.md
+  - 🕹 Who's Behind The Screen: about.md
+  - 🗂 Categories:
+    - Tech Deep Dive: categories/tech-deep-dive.md
+    - Tutorials: categories/tutorials.md
+    - General Speaking: categories/general-speaking.md

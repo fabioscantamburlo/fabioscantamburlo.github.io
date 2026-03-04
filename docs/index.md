@@ -1,25 +1,16 @@
-# >> Leveling Up For What I Lack BLOG
-
-```
- ___________________________
-|                           |
-|   PRESS START TO BEGIN    |
-|___________________________|
-```
-
-Welcome to my blog!
-Blog only rule: Turning daily failures into brain EXP.
-I write about things I build, break, and find interesting — mainly projects but not limited in any way.
+<div class="hero">
+  <div class="hero-title">>> LEVELING UP<br>FOR WHAT I LACK</div>
+  <div class="hero-sub">Turning daily failures into brain EXP.</div>
+  <div class="hero-blink">▼ PRESS START ▼</div>
+  <a href="blog/" class="hero-btn">▶ START READING</a>
+</div>
 
 ---
 
 ## LATEST POSTS
 
-Check out the [Blog](blog/index.md) for all posts.
+Check out the [Blog](blog/index.md) for all posts, or jump to a category:
 
----
-
-## QUICK NAV
-
-- [About Me](about.md) — who's behind the screen
-- [Blog](blog/index.md) — all posts
+- [Tech Deep Dive](categories/tech-deep-dive.md)
+- [Tutorials](categories/tutorials.md)
+- [General Speaking](categories/general-speaking.md)
