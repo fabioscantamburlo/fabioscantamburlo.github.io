@@ -54,26 +54,45 @@ body {
 
 
 /* ── Headings ── */
-.md-typeset h1,
-.md-typeset h2,
-.md-typeset h3 {
+.md-typeset h1 {
   font-family: 'Press Start 2P', monospace;
   color: var(--theme-heading-color);
+  font-size: 0.85rem;
   border-bottom: 2px solid var(--crystal-cyan);
   padding-bottom: 0.3em;
 }
 
-.md-typeset h1 { font-size: 1rem; }
-.md-typeset h2 { font-size: 0.8rem; }
-.md-typeset h3 { font-size: 0.65rem; }
+.md-typeset h2 {
+  font-family: 'Press Start 2P', monospace;
+  color: var(--theme-heading-color);
+  font-size: 0.7rem;
+  border-bottom: 1px dashed var(--crystal-cyan);
+  padding-bottom: 0.3em;
+}
+
+[data-md-color-scheme="default"] .md-typeset h3 {
+  color: var(--midnight);
+}
+
+.md-typeset h3 {
+  font-family: 'Share Tech Mono', monospace;
+  color: var(--crystal-cyan);
+  font-size: 0.75rem;
+  border-bottom: none;
+  border-left: 3px solid var(--pikachu-gold);
+  padding-left: 0.6em;
+  padding-bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
 
 /* ── Body text ── */
 .md-typeset p,
 .md-typeset li {
   font-family: 'Share Tech Mono', monospace;
-  font-size: 0.9rem;
+  font-size: 0.78rem;
   color: var(--md-typeset-color);
-  line-height: 1.9;
+  line-height: 1.8;
 }
 
 .md-typeset strong {

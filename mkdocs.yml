@@ -46,6 +46,7 @@ plugins:
       post_readtime: true
       post_excerpt: required
       categories_allowed:
+        - Reinventing the Wheel
         - Tech Deep Dive
         - Tutorials
         - General Speaking
@@ -56,5 +57,6 @@ nav:
   - 🕹 Player Stats: about.md
   - 🗂 Categories:
     - Tech Deep Dive: categories/tech-deep-dive.md
+    - Reinventing the Wheel: categories/reinventing-the-wheel.md
     - Tutorials: categories/tutorials.md
     - General Speaking: categories/general-speaking.md
