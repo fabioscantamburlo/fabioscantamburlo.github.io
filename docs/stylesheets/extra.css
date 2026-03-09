@@ -485,6 +485,19 @@ body {
   background: rgba(67,198,185,0.1);
 }
 
+/* ── Blog post metadata ── */
+[data-md-color-scheme="default"] .md-post__meta,
+[data-md-color-scheme="default"] .md-post__meta a {
+  color: #1a6b63 !important;
+  opacity: 0.7;
+}
+
+[data-md-color-scheme="slate"] .md-post__meta,
+[data-md-color-scheme="slate"] .md-post__meta a {
+  color: var(--icy-shimmer) !important;
+  opacity: 0.5;
+}
+
 /* ── Back to top ── */
 .md-top {
   background: var(--midnight) !important;
